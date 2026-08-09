@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
+                        <x-application-logo class="w-24 h-24 object-contain" />
                     </a>
                 </div>
 
@@ -16,6 +16,21 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+                <x-nav-link :href="route('admin.services.index')" :active="request()->routeIs('admin.services.*')">
+                    {{ __('Layanan') }}
+                </x-nav-link>
+                <x-nav-link :href="route('admin.projects.index')" :active="request()->routeIs('admin.projects.*')">
+                    {{ __('Proyek') }}
+                </x-nav-link>
+                <x-nav-link :href="route('admin.galleries.index')" :active="request()->routeIs('admin.galleries.*')">
+                    {{ __('Galeri') }}
+                </x-nav-link>
+                <x-nav-link :href="route('admin.articles.index')" :active="request()->routeIs('admin.articles.*')">
+                    {{ __('Artikel') }}
+                </x-nav-link>
+                <x-nav-link :href="route('admin.contacts.index')" :active="request()->routeIs('admin.contacts.*')">
+                    {{ __('Kontak') }}
+                </x-nav-link>
             </div>
 
             <!-- Settings Dropdown -->
@@ -69,6 +84,21 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.services.index')" :active="request()->routeIs('admin.services.*')">
+                {{ __('Layanan') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.projects.index')" :active="request()->routeIs('admin.projects.*')">
+                {{ __('Proyek') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.galleries.index')" :active="request()->routeIs('admin.galleries.*')">
+                {{ __('Galeri') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.articles.index')" :active="request()->routeIs('admin.articles.*')">
+                {{ __('Artikel') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.contacts.index')" :active="request()->routeIs('admin.contacts.*')">
+                {{ __('Kontak') }}
             </x-responsive-nav-link>
         </div>
 

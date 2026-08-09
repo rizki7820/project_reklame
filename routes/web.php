@@ -1,13 +1,15 @@
 <?php
 
+use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\ServiceCategoryController;
-use App\Http\Controllers\Admin\PortfolioController;
-use App\Http\Controllers\Admin\TestimonialController;
+use App\Http\Controllers\Admin\ServiceController;
+use App\Http\Controllers\Admin\ProjectController;
+use App\Http\Controllers\Admin\GalleryController;
+use App\Http\Controllers\Admin\ContactController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/dashboard', function () {
@@ -21,20 +23,17 @@ Route::middleware('auth')->group(function () {
 });
 
 
-Route::prefix('admin')
-    ->middleware('auth')
-    ->name('admin.')
-    ->group(function () {
 
-        Route::resource('service-categories', ServiceCategoryController::class);
 
-        Route::resource('portfolios', PortfolioController::class);
-
-        Route::resource('testimonials', TestimonialController::class);
-
-        // Route::get('settings', [SettingController::class,'edit'])->name('settings.edit');
-        // Route::put('settings', [SettingController::class,'update'])->name('settings.update');
-
+Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
+    Route::resource('services', ServiceController::class)->only(['index','store','update','destroy']);
+    Route::resource('projects', ProjectController::class)->only(['index','store','update','destroy']);
+    Route::resource('galleries', GalleryController::class)->only(['index','store','update','destroy']);
+    Route::resource('articles', ArticleController::class)->only(['index','store','update','destroy']);
+    Route::get('contacts', [ContactController::class, 'index'])
+            ->name('contacts.index');
+    Route::put('contacts/{contact}', [ContactController::class, 'update'])
+            ->name('contacts.update');
 });
 
 require __DIR__.'/auth.php';
