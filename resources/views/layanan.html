@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan - Doa Ibu Production</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body{
+            background:#34383b;
+        }
+
+        .outline-text{
+            color: transparent;
+            -webkit-text-stroke: 2px #83d401;
+        }
+
+        .service-card{
+            transition: transform .3s ease, border-color .3s ease;
+        }
+
+        .service-card:hover{
+            transform: translateY(-6px);
+            border-color: #83d401;
+        }
+    </style>
+</head>
+<body class="text-white overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#34383b]/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-screen-2xl mx-auto px-6 py-6 flex items-center justify-between">
+
+            <a href="/" class="flex items-center gap-3 text-2xl font-black tracking-wider">
+                <img src="logo.svg" alt="" class="h-14 w-auto object-contain flex-shrink-0">
+                <span>
+                    DOA IBU
+                    <span class="text-[#83d401]">PRODUCTION</span>
+                </span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-10 text-sm uppercase tracking-widest">
+                <a href="/" class="hover:text-[#83d401] transition">Home</a>
+                <a href="/#about" class="hover:text-[#83d401] transition">About</a>
+                <a href="/layanan" class="text-[#83d401] transition">Layanan</a>
+                <a href="/proyek" class="hover:text-[#83d401] transition">Proyek</a>
+                <a href="/galeri" class="hover:text-[#83d401] transition">Galeri</a>
+                <a href="/#contact" class="hover:text-[#83d401] transition">Contact</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-44 pb-16 px-6 lg:px-16 max-w-screen-2xl mx-auto">
+        <span class="uppercase tracking-[6px] text-[#83d401] text-sm">Apa yang kami kerjakan</span>
+        <h1 class="text-5xl md:text-6xl font-black uppercase mt-4">
+            Layanan <span class="outline-text">Kami</span>
+        </h1>
+        <p class="mt-6 text-gray-400 text-lg max-w-2xl leading-8">
+            Mulai dari huruf timbul, neon box, hingga branding interior — kami
+            bantu wujudkan identitas visual bisnis Anda dengan material
+            berkualitas dan pengerjaan presisi.
+        </p>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="px-6 lg:px-16 max-w-screen-2xl mx-auto pb-24">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card 1 -->
+            <a href="/layanan/huruf-timbul"
+               class="service-card group block border-2 border-white/10 rounded-[24px] overflow-hidden bg-white/[0.02]">
+                <div class="h-52 overflow-hidden">
+                    <img src="huruf-timbul.jpg" alt="Huruf Timbul"
+                         class="w-full h-full object-cover group-hover:scale-110 duration-500">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3">Huruf Timbul</h3>
+                    <p class="text-gray-400 leading-7 mb-6">
+                        Kesan premium untuk fasad toko & kantor. Bahan akrilik,
+                        stainless steel, hingga plat cat duco.
+                    </p>
+                    <span class="inline-flex items-center gap-2 text-[#83d401] font-semibold uppercase text-sm tracking-widest">
+                        Selengkapnya
+                        <span class="group-hover:translate-x-1 duration-300">→</span>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="/layanan/neon-box"
+               class="service-card group block border-2 border-white/10 rounded-[24px] overflow-hidden bg-white/[0.02]">
+                <div class="h-52 overflow-hidden">
+                    <img src="neon-box.jpg" alt="Neon Box"
+                         class="w-full h-full object-cover group-hover:scale-110 duration-500">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3">Neon Box</h3>
+                    <p class="text-gray-400 leading-7 mb-6">
+                        Media promosi menyala terang siang & malam, desain
+                        custom sesuai identitas brand Anda.
+                    </p>
+                    <span class="inline-flex items-center gap-2 text-[#83d401] font-semibold uppercase text-sm tracking-widest">
+                        Selengkapnya
+                        <span class="group-hover:translate-x-1 duration-300">→</span>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="/layanan/papan-nama"
+               class="service-card group block border-2 border-white/10 rounded-[24px] overflow-hidden bg-white/[0.02]">
+                <div class="h-52 overflow-hidden">
+                    <img src="papan-nama.jpg" alt="Papan Nama"
+                         class="w-full h-full object-cover group-hover:scale-110 duration-500">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3">Papan Nama</h3>
+                    <p class="text-gray-400 leading-7 mb-6">
+                        Shopsign informatif dan profesional untuk memperkuat
+                        keberadaan bisnis Anda di jalan.
+                    </p>
+                    <span class="inline-flex items-center gap-2 text-[#83d401] font-semibold uppercase text-sm tracking-widest">
+                        Selengkapnya
+                        <span class="group-hover:translate-x-1 duration-300">→</span>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="/layanan/billboard"
+               class="service-card group block border-2 border-white/10 rounded-[24px] overflow-hidden bg-white/[0.02]">
+                <div class="h-52 overflow-hidden">
+                    <img src="billboard.jpg" alt="Billboard"
+                         class="w-full h-full object-cover group-hover:scale-110 duration-500">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3">Billboard</h3>
+                    <p class="text-gray-400 leading-7 mb-6">
+                        Media reklame skala besar untuk jangkauan audiens
+                        maksimal, lengkap dengan izin & pemasangan.
+                    </p>
+                    <span class="inline-flex items-center gap-2 text-[#83d401] font-semibold uppercase text-sm tracking-widest">
+                        Selengkapnya
+                        <span class="group-hover:translate-x-1 duration-300">→</span>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Card 5 -->
+            <a href="/layanan/acp"
+               class="service-card group block border-2 border-white/10 rounded-[24px] overflow-hidden bg-white/[0.02]">
+                <div class="h-52 overflow-hidden">
+                    <img src="acp.jpg" alt="ACP"
+                         class="w-full h-full object-cover group-hover:scale-110 duration-500">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3">ACP</h3>
+                    <p class="text-gray-400 leading-7 mb-6">
+                        Aluminium Composite Panel untuk fasad modern, ringan,
+                        tahan cuaca, dan pilihan warna beragam.
+                    </p>
+                    <span class="inline-flex items-center gap-2 text-[#83d401] font-semibold uppercase text-sm tracking-widest">
+                        Selengkapnya
+                        <span class="group-hover:translate-x-1 duration-300">→</span>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Card 6 -->
+            <a href="/layanan/branding-interior"
+               class="service-card group block border-2 border-white/10 rounded-[24px] overflow-hidden bg-white/[0.02]">
+                <div class="h-52 overflow-hidden">
+                    <img src="branding-interior.jpg" alt="Branding Interior"
+                         class="w-full h-full object-cover group-hover:scale-110 duration-500">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3">Branding Interior</h3>
+                    <p class="text-gray-400 leading-7 mb-6">
+                        Sentuhan visual di dalam ruangan untuk memperkuat
+                        pengalaman brand pelanggan Anda.
+                    </p>
+                    <span class="inline-flex items-center gap-2 text-[#83d401] font-semibold uppercase text-sm tracking-widest">
+                        Selengkapnya
+                        <span class="group-hover:translate-x-1 duration-300">→</span>
+                    </span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="px-6 lg:px-16 max-w-screen-2xl mx-auto pb-24">
+        <div class="border-2 border-[#83d401] rounded-[30px] p-12 text-center">
+            <h2 class="text-3xl md:text-4xl font-black">
+                Gak Nemu Layanan yang Anda Cari?
+            </h2>
+            <p class="mt-4 text-gray-400 max-w-xl mx-auto">
+                Konsultasikan kebutuhan reklame Anda dengan tim kami — gratis survei & desain.
+            </p>
+            <a href="/#contact"
+               class="mt-8 inline-block px-10 py-5 rounded-full bg-[#83d401] text-[#34383b] font-semibold hover:scale-105 duration-300">
+                Konsultasi Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#34383b] border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-16">
+            <div class="grid lg:grid-cols-4 gap-16">
+
+                <div>
+                    <h2 class="text-3xl font-black">
+                        DOA IBU <span class="text-[#83d401]">PRODUCTION</span>
+                    </h2>
+                    <p class="mt-8 text-gray-400 leading-8">
+                        Creative Production House yang berfokus pada
+                        branding, advertising, photography, videography dan digital media.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-xl mb-8">Navigasi</h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="/" class="hover:text-[#83d401]">Beranda</a></li>
+                        <li><a href="/layanan" class="hover:text-[#83d401]">Layanan</a></li>
+                        <li><a href="/proyek" class="hover:text-[#83d401]">Proyek</a></li>
+                        <li><a href="/galeri" class="hover:text-[#83d401]">Galeri</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-xl mb-8">Hubungi Kami</h3>
+                    <div class="space-y-5 text-gray-400">
+                        <p>📞 +62 812 xxxx xxxx</p>
+                        <p>✉ info@doaibuproduction.com</p>
+                        <p>📍 Bandar Lampung</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-xl mb-8">Ikuti Kami</h3>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#83d401] hover:text-[#34383b] duration-300">IG</a>
+                        <a href="#" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#83d401] hover:text-[#34383b] duration-300">FB</a>
+                        <a href="#" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#83d401] hover:text-[#34383b] duration-300">TT</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-gray-500">© 2026 Doa Ibu Production. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -6,6 +6,10 @@
     <title>Doa Ibu Production</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 
     <style>
         body{
@@ -47,7 +51,7 @@
 
         .outline-text{
             color: transparent;
-            -webkit-text-stroke: 2px #e5fe53;
+            -webkit-text-stroke: 2px #83d401;
         }
 
         .hero-gradient{
@@ -70,7 +74,7 @@
 
             color:transparent;
 
-            -webkit-text-stroke:1px #e5fe53;
+            -webkit-text-stroke:1px #83d401;
 
             letter-spacing:6px;
 
@@ -102,39 +106,130 @@
 
     <!-- Logo -->
     <img
-        src="logo.svg"
+        src="logo_dip.png"
         alt=""
         class="h-16 w-auto lg:h-20 object-contain flex-shrink-0">
 
     <!-- Text -->
-    <span>
-        DOA IBU
-        <span class="text-[#e5fe53]">
-            PRODUCTION
-        </span>
+    <div class="relative">
+     <span class="font-['Anton'] leading-tight">
+        <div class="relative inline-block">
+    <!-- Lime paling luar -->
+    <span
+        class="font-['Anton'] text-4xl font-black text-white"
+        style="
+            -webkit-text-stroke: 8px #83d401;
+            paint-order: stroke fill;
+        "
+    >
+        doa ibu
     </span>
+
+    <!-- Hitam di atas lime -->
+    <span
+        class="absolute inset-0 font-['Anton'] text-4xl font-black text-white"
+        style="
+            -webkit-text-stroke: 4px #000;
+            paint-order: stroke fill;
+        "
+    >
+        doa ibu
+    </span>
+</div>
+            <div class="relative inline-block">
+    <!-- Lime paling luar -->
+    <span
+        class="font-['Anton'] text-4xl font-black text-white"
+        style="
+            -webkit-text-stroke: 8px #83d401;
+            paint-order: stroke fill;
+        "
+    >
+        production
+    </span>
+
+    <!-- Hitam di atas lime -->
+    <span
+        class="absolute inset-0 font-['Anton'] text-4xl font-black text-white"
+        style="
+            -webkit-text-stroke: 4px #000;
+            paint-order: stroke fill;
+        "
+    >
+        production
+    </span>
+</div>
+
+       <div class="relative inline-block">
+    <!-- Lime paling luar -->
+    <span
+        class="font-['Kaushan_Script'] text-2xl font-black text-white"
+        style="
+            -webkit-text-stroke: 8px #83d401;
+            paint-order: stroke fill;
+        "
+    >
+        Advertising
+    </span>
+
+    <!-- Hitam di atas lime -->
+    <span
+        class="absolute inset-0 font-['Kaushan_Script'] text-2xl font-black text-white"
+        style="
+            -webkit-text-stroke: 4px #000;
+            paint-order: stroke fill;
+        "
+    >
+        Advertising
+    </span>
+</div>
+
+<div class="relative inline-block">
+    <!-- Lime paling luar -->
+    <span
+        class="font-['Kaushan_Script'] text-2xl font-black text-white"
+        style="
+            -webkit-text-stroke: 8px #83d401;
+            paint-order: stroke fill;
+        "
+    >
+        Banjarmasin
+    </span>
+
+    <!-- Hitam di atas lime -->
+    <span
+        class="absolute inset-0 font-['Kaushan_Script'] text-2xl font-black text-white"
+        style="
+            -webkit-text-stroke: 4px #000;
+            paint-order: stroke fill;
+        "
+    >
+        Banjarmasin
+    </span>
+</div>
+</div>
 
 </a>
 
             <div class="hidden md:flex items-center gap-10 text-sm uppercase tracking-widest">
 
-                <a href="#home" class="hover:text-[#e5fe53] transition">
+                <a href="#home" class="hover:text-[#83d401] transition">
                     Home
                 </a>
 
-                <a href="#about" class="hover:text-[#e5fe53] transition">
+                <a href="#about" class="hover:text-[#83d401] transition">
                     About
                 </a>
 
-                <a href="#services" class="hover:text-[#e5fe53] transition">
+                <a href="#services" class="hover:text-[#83d401] transition">
                     Services
                 </a>
 
-                <a href="#portofolio" class="hover:text-[#e5fe53] transition">
+                <a href="#portofolio" class="hover:text-[#83d401] transition">
                     Portfolio
                 </a>
 
-                <a href="#contact" class="hover:text-[#e5fe53] transition">
+                <a href="#contact" class="hover:text-[#83d401] transition">
                     Contact
                 </a>
 
@@ -185,8 +280,8 @@ HERO
 
             <div
                 class="w-6 h-6
-                border-2 border-[#e5fe53]
-                flex items-center justify-center text-[#e5fe53]">
+                border-2 border-[#83d401]
+                flex items-center justify-center text-[#83d401]">
 
                 ✓
 
@@ -194,7 +289,7 @@ HERO
 
             <span class="text-2xl font-medium">
 
-                <span class="text-[#e5fe53]">Slim</span> Light Box
+                <span class="text-[#83d401]">Slim</span> Light Box
 
             </span>
 
@@ -204,8 +299,8 @@ HERO
 
             <div
                 class="w-6 h-6
-                border-2 border-[#e5fe53]
-                flex items-center justify-center text-[#e5fe53]">
+                border-2 border-[#83d401]
+                flex items-center justify-center text-[#83d401]">
 
                 ✓
 
@@ -213,7 +308,7 @@ HERO
 
             <span class="text-2xl font-medium">
 
-                Huruf <span class="text-[#e5fe53]">Timbul</span>
+                Huruf <span class="text-[#83d401]">Timbul</span>
 
             </span>
 
@@ -223,8 +318,8 @@ HERO
 
             <div
                 class="w-6 h-6
-                border-2 border-[#e5fe53]
-                flex items-center justify-center text-[#e5fe53]">
+                border-2 border-[#83d401]
+                flex items-center justify-center text-[#83d401]">
 
                 ✓
 
@@ -232,7 +327,7 @@ HERO
 
             <span class="text-2xl font-medium">
 
-                Running Text <span class="text-[#e5fe53]">LED</span>
+                Running Text <span class="text-[#83d401]">LED</span>
 
             </span>
 
@@ -242,8 +337,8 @@ HERO
 
             <div
                 class="w-6 h-6
-                border-2 border-[#e5fe53]
-                flex items-center justify-center text-[#e5fe53]">
+                border-2 border-[#83d401]
+                flex items-center justify-center text-[#83d401]">
 
                 ✓
 
@@ -251,7 +346,7 @@ HERO
 
             <span class="text-2xl font-medium">
 
-                Papan <span class="text-[#e5fe53]">Nama & Logo</span>
+                Papan <span class="text-[#83d401]">Nama & Logo</span>
 
             </span>
 
@@ -261,8 +356,8 @@ HERO
 
            <div
                 class="w-6 h-6
-                border-2 border-[#e5fe53]
-                flex items-center justify-center text-[#e5fe53]">
+                border-2 border-[#83d401]
+                flex items-center justify-center text-[#83d401]">
 
                 ✓
 
@@ -270,7 +365,7 @@ HERO
 
             <span class="text-2xl font-medium">
 
-                Custom <span class="text-[#e5fe53]">Design</span>
+                Custom <span class="text-[#83d401]">Design</span>
 
             </span>
 
@@ -284,7 +379,7 @@ HERO
 
     <!-- Button -->
 
-    <button class="mt-12 w-full border-2 border-[#e5fe53] py-5 uppercase tracking-[2px] font-bold text-lg hover:bg-[#e5fe53] hover:text-[#34383b] transition mb-10">
+    <button class="mt-12 w-full border-2 border-[#83d401] py-5 uppercase tracking-[2px] font-bold text-lg hover:bg-[#83d401] hover:text-[#34383b] transition mb-10">
         ORDER SEKARANG
     </button>
 </div>
@@ -323,14 +418,14 @@ HERO
         <div
             class="mt-6
             border-2
-            border-[#e5fe53]
+            border-[#83d401]
             rounded-[30px]
             p-10">
 
             <h2
                 class="text-3xl
                 font-black
-                text-[#e5fe53]">
+                text-[#83d401]">
 
                 MELAYANI BERBAGAI KEBUTUHAN
 
@@ -397,12 +492,12 @@ HERO
             <div
                 class="col-span-4
                 border-2
-                border-[#e5fe53]
+                border-[#83d401]
                 rounded-[30px]
                 p-8">
 
                 <p
-                    class="text-[#e5fe53]
+                    class="text-[#83d401]
                     uppercase">
 
                     WhatsApp
@@ -425,7 +520,7 @@ HERO
             <div
                 class="col-span-8
                 border-2
-                border-[#e5fe53]
+                border-[#83d401]
                 rounded-[30px]
                 p-8">
 
@@ -497,7 +592,7 @@ ABOUT
 
             <div>
 
-                <p class="uppercase tracking-[6px] text-[#e5fe53] mb-4">
+                <p class="uppercase tracking-[6px] text-[#83d401] mb-4">
                     About Us
                 </p>
 
@@ -534,7 +629,7 @@ ABOUT
 
                     <div>
 
-                        <h3 class="text-5xl font-black text-[#e5fe53] counter"
+                        <h3 class="text-5xl font-black text-[#83d401] counter"
                             data-target="150">
                             0
                         </h3>
@@ -547,7 +642,7 @@ ABOUT
 
                     <div>
 
-                        <h3 class="text-5xl font-black text-[#e5fe53] counter"
+                        <h3 class="text-5xl font-black text-[#83d401] counter"
                             data-target="95">
                             0
                         </h3>
@@ -599,7 +694,7 @@ SERVICES
 
             <div>
 
-                <span class="uppercase tracking-[6px] text-[#e5fe53] text-sm font-semibold">
+                <span class="uppercase tracking-[6px] text-[#83d401] text-sm font-semibold">
                     Layanan Kami
                 </span>
 
@@ -624,7 +719,7 @@ SERVICES
         <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
 
             <!-- CARD -->
-            <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#e5fe53] transition-all duration-500">
+            <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
 
                 <div class="relative overflow-hidden h-72">
 
@@ -639,11 +734,11 @@ SERVICES
 
                 <div class="p-8">
 
-                    <span class="text-[#e5fe53] tracking-[4px] uppercase text-xs">
+                    <span class="text-[#83d401] tracking-[4px] uppercase text-xs">
                         01
                     </span>
 
-                    <h3 class="text-3xl font-bold mt-3 group-hover:text-[#e5fe53] transition">
+                    <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">
                         Branding Identity
                     </h3>
 
@@ -658,7 +753,7 @@ SERVICES
                             Explore
                         </span>
 
-                        <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#e5fe53] group-hover:text-[#34383b] group-hover:border-[#e5fe53] transition-all duration-300">
+                        <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition-all duration-300">
 
                             →
 
@@ -671,7 +766,7 @@ SERVICES
             </div>
 
             <!-- CARD -->
-            <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#e5fe53] transition-all duration-500">
+            <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
 
                 <div class="relative overflow-hidden h-72">
 
@@ -686,11 +781,11 @@ SERVICES
 
                 <div class="p-8">
 
-                    <span class="text-[#e5fe53] tracking-[4px] uppercase text-xs">
+                    <span class="text-[#83d401] tracking-[4px] uppercase text-xs">
                         02
                     </span>
 
-                    <h3 class="text-3xl font-bold mt-3 group-hover:text-[#e5fe53] transition">
+                    <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">
                         Photography & Videography
                     </h3>
 
@@ -705,7 +800,7 @@ SERVICES
                             Explore
                         </span>
 
-                        <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#e5fe53] group-hover:text-[#34383b] group-hover:border-[#e5fe53] transition-all">
+                        <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition-all">
 
                             →
 
@@ -718,7 +813,7 @@ SERVICES
             </div>
 
             <!-- CARD -->
-            <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#e5fe53] transition-all duration-500">
+            <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
 
                 <div class="relative overflow-hidden h-72">
 
@@ -733,11 +828,11 @@ SERVICES
 
                 <div class="p-8">
 
-                    <span class="text-[#e5fe53] tracking-[4px] uppercase text-xs">
+                    <span class="text-[#83d401] tracking-[4px] uppercase text-xs">
                         03
                     </span>
 
-                    <h3 class="text-3xl font-bold mt-3 group-hover:text-[#e5fe53] transition">
+                    <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">
                         Social Media Management
                     </h3>
 
@@ -752,7 +847,7 @@ SERVICES
                             Explore
                         </span>
 
-                        <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#e5fe53] group-hover:text-[#34383b] group-hover:border-[#e5fe53] transition">
+                        <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition">
 
                             →
 
@@ -765,7 +860,7 @@ SERVICES
             </div>
 
             <!-- CARD -->
-            <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#e5fe53] transition-all duration-500">
+            <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
 
                 <div class="relative overflow-hidden h-72">
 
@@ -780,11 +875,11 @@ SERVICES
 
                 <div class="p-8">
 
-                    <span class="text-[#e5fe53] tracking-[4px] uppercase text-xs">
+                    <span class="text-[#83d401] tracking-[4px] uppercase text-xs">
                         04
                     </span>
 
-                    <h3 class="text-3xl font-bold mt-3 group-hover:text-[#e5fe53] transition">
+                    <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">
                         Digital Advertising
                     </h3>
 
@@ -799,7 +894,7 @@ SERVICES
                             Explore
                         </span>
 
-                        <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#e5fe53] group-hover:text-[#34383b] group-hover:border-[#e5fe53] transition">
+                        <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition">
 
                             →
 
@@ -812,7 +907,7 @@ SERVICES
             </div>
 
             <!-- CARD -->
-            <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#e5fe53] transition-all duration-500">
+            <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
 
                 <div class="relative overflow-hidden h-72">
 
@@ -827,11 +922,11 @@ SERVICES
 
                 <div class="p-8">
 
-                    <span class="text-[#e5fe53] tracking-[4px] uppercase text-xs">
+                    <span class="text-[#83d401] tracking-[4px] uppercase text-xs">
                         05
                     </span>
 
-                    <h3 class="text-3xl font-bold mt-3 group-hover:text-[#e5fe53] transition">
+                    <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">
                         Event Production
                     </h3>
 
@@ -846,7 +941,7 @@ SERVICES
                             Explore
                         </span>
 
-                        <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#e5fe53] group-hover:text-[#34383b] group-hover:border-[#e5fe53] transition">
+                        <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition">
 
                             →
 
@@ -859,7 +954,7 @@ SERVICES
             </div>
 
             <!-- CARD -->
-            <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#e5fe53] transition-all duration-500">
+            <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
 
                 <div class="relative overflow-hidden h-72">
 
@@ -874,11 +969,11 @@ SERVICES
 
                 <div class="p-8">
 
-                    <span class="text-[#e5fe53] tracking-[4px] uppercase text-xs">
+                    <span class="text-[#83d401] tracking-[4px] uppercase text-xs">
                         06
                     </span>
 
-                    <h3 class="text-3xl font-bold mt-3 group-hover:text-[#e5fe53] transition">
+                    <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">
                         Website Development
                     </h3>
 
@@ -893,7 +988,7 @@ SERVICES
                             Explore
                         </span>
 
-                        <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#e5fe53] group-hover:text-[#34383b] group-hover:border-[#e5fe53] transition">
+                        <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition">
 
                             →
 
@@ -926,7 +1021,7 @@ WHY CHOOSE US
             <div>
 
                 <span
-                    class="uppercase tracking-[6px] text-[#e5fe53] text-sm font-semibold">
+                    class="uppercase tracking-[6px] text-[#83d401] text-sm font-semibold">
 
                     Mengapa Memilih Kami
 
@@ -961,7 +1056,7 @@ WHY CHOOSE US
                     <div class="group flex items-start gap-6 border-b border-white/10 pb-6">
 
                         <div
-                            class="w-12 h-12 rounded-full bg-[#e5fe53] text-[#34383b] flex items-center justify-center text-xl font-bold">
+                            class="w-12 h-12 rounded-full bg-[#83d401] text-[#34383b] flex items-center justify-center text-xl font-bold">
 
                             ✓
 
@@ -977,7 +1072,7 @@ WHY CHOOSE US
 
                                 </h3>
 
-                                <span class="text-[#e5fe53]">
+                                <span class="text-[#83d401]">
 
                                     5+ Tahun
 
@@ -1002,7 +1097,7 @@ WHY CHOOSE US
                     <div class="group flex items-start gap-6 border-b border-white/10 pb-6">
 
                         <div
-                            class="w-12 h-12 rounded-full bg-[#e5fe53] text-[#34383b] flex items-center justify-center text-xl font-bold">
+                            class="w-12 h-12 rounded-full bg-[#83d401] text-[#34383b] flex items-center justify-center text-xl font-bold">
 
                             ✓
 
@@ -1018,7 +1113,7 @@ WHY CHOOSE US
 
                                 </h3>
 
-                                <span class="text-[#e5fe53]">
+                                <span class="text-[#83d401]">
 
                                     Creative Team
 
@@ -1044,7 +1139,7 @@ WHY CHOOSE US
                     <div class="group flex items-start gap-6 border-b border-white/10 pb-6">
 
                         <div
-                            class="w-12 h-12 rounded-full bg-[#e5fe53] text-[#34383b] flex items-center justify-center text-xl font-bold">
+                            class="w-12 h-12 rounded-full bg-[#83d401] text-[#34383b] flex items-center justify-center text-xl font-bold">
 
                             ✓
 
@@ -1060,7 +1155,7 @@ WHY CHOOSE US
 
                                 </h3>
 
-                                <span class="text-[#e5fe53]">
+                                <span class="text-[#83d401]">
 
                                     On Schedule
 
@@ -1084,7 +1179,7 @@ WHY CHOOSE US
                     <div class="group flex items-start gap-6">
 
                         <div
-                            class="w-12 h-12 rounded-full bg-[#e5fe53] text-[#34383b] flex items-center justify-center text-xl font-bold">
+                            class="w-12 h-12 rounded-full bg-[#83d401] text-[#34383b] flex items-center justify-center text-xl font-bold">
 
                             ✓
 
@@ -1100,7 +1195,7 @@ WHY CHOOSE US
 
                                 </h3>
 
-                                <span class="text-[#e5fe53]">
+                                <span class="text-[#83d401]">
 
                                     No Hidden Cost
 
@@ -1128,7 +1223,7 @@ WHY CHOOSE US
             <div class="relative">
 
                 <div
-                    class="absolute -top-8 -right-8 w-40 h-40 rounded-full bg-[#e5fe53]/20 blur-3xl">
+                    class="absolute -top-8 -right-8 w-40 h-40 rounded-full bg-[#83d401]/20 blur-3xl">
                 </div>
 
                 <img
@@ -1145,7 +1240,7 @@ WHY CHOOSE US
 
                     </p>
 
-                    <h3 class="text-5xl font-black text-[#e5fe53] mt-2">
+                    <h3 class="text-5xl font-black text-[#83d401] mt-2">
 
                         98%
 
@@ -1175,7 +1270,7 @@ PORTFOLIO
 
             <div>
 
-                <span class="uppercase tracking-[6px] text-[#e5fe53] text-sm font-semibold">
+                <span class="uppercase tracking-[6px] text-[#83d401] text-sm font-semibold">
 
                     Portfolio
 
@@ -1207,7 +1302,7 @@ PORTFOLIO
 
                 <a href="/gallery"
 
-                class="inline-flex items-center gap-3 border border-[#e5fe53] text-[#e5fe53] px-7 py-4 rounded-full hover:bg-[#e5fe53] hover:text-[#34383b] transition">
+                class="inline-flex items-center gap-3 border border-[#83d401] text-[#83d401] px-7 py-4 rounded-full hover:bg-[#83d401] hover:text-[#34383b] transition">
 
                     Lihat Semua
 
@@ -1253,7 +1348,7 @@ PORTFOLIO
 
                     <div class="mt-5">
 
-                        <p class="text-[#e5fe53] uppercase text-xs tracking-[5px]">
+                        <p class="text-[#83d401] uppercase text-xs tracking-[5px]">
 
                             Advertising
 
@@ -1280,7 +1375,7 @@ TESTIMONI
 
     <div class="max-w-5xl mx-auto px-6 text-center">
 
-        <span class="uppercase tracking-[6px] text-[#e5fe53] text-sm font-semibold">
+        <span class="uppercase tracking-[6px] text-[#83d401] text-sm font-semibold">
 
             Testimoni
 
@@ -1308,7 +1403,7 @@ TESTIMONI
 
                     <div class="max-w-4xl mx-auto">
 
-                        <div class="text-[#e5fe53] text-8xl font-black leading-none">
+                        <div class="text-[#83d401] text-8xl font-black leading-none">
 
                             “
 
@@ -1323,7 +1418,7 @@ TESTIMONI
 
                         </p>
 
-                        <div class="mt-10 text-[#e5fe53] text-2xl">
+                        <div class="mt-10 text-[#83d401] text-2xl">
 
                             ★★★★★
 
@@ -1333,7 +1428,7 @@ TESTIMONI
 
                             <img
                                 src="https://picsum.photos/3010/1080"
-                                class="w-20 h-20 rounded-full object-cover mx-auto border-2 border-[#e5fe53]">
+                                class="w-20 h-20 rounded-full object-cover mx-auto border-2 border-[#83d401]">
 
                             <h3 class="mt-5 text-2xl font-bold">
 
@@ -1359,7 +1454,7 @@ TESTIMONI
 
                     <div class="max-w-4xl mx-auto">
 
-                        <div class="text-[#e5fe53] text-8xl font-black">
+                        <div class="text-[#83d401] text-8xl font-black">
 
                             “
 
@@ -1373,7 +1468,7 @@ TESTIMONI
 
                         </p>
 
-                        <div class="mt-10 text-[#e5fe53] text-2xl">
+                        <div class="mt-10 text-[#83d401] text-2xl">
 
                             ★★★★★
 
@@ -1383,7 +1478,7 @@ TESTIMONI
 
                             <img
                                 src="https://picsum.photos/3010/1080"
-                                class="w-20 h-20 rounded-full object-cover mx-auto border-2 border-[#e5fe53]">
+                                class="w-20 h-20 rounded-full object-cover mx-auto border-2 border-[#83d401]">
 
                             <h3 class="mt-5 text-2xl font-bold">
 
@@ -1425,7 +1520,7 @@ FAQ
 
         <div class="text-center mb-20">
 
-            <span class="uppercase tracking-[6px] text-[#e5fe53] text-sm font-semibold">
+            <span class="uppercase tracking-[6px] text-[#83d401] text-sm font-semibold">
 
                 FAQ
 
@@ -1470,7 +1565,7 @@ FAQ
                     </h3>
 
                     <span
-                        class="text-[#e5fe53] text-4xl transition group-open:rotate-45">
+                        class="text-[#83d401] text-4xl transition group-open:rotate-45">
 
                         +
 
@@ -1505,7 +1600,7 @@ FAQ
                     </h3>
 
                     <span
-                        class="text-[#e5fe53] text-4xl transition group-open:rotate-45">
+                        class="text-[#83d401] text-4xl transition group-open:rotate-45">
 
                         +
 
@@ -1537,7 +1632,7 @@ FAQ
                     </h3>
 
                     <span
-                        class="text-[#e5fe53] text-4xl transition group-open:rotate-45">
+                        class="text-[#83d401] text-4xl transition group-open:rotate-45">
 
                         +
 
@@ -1569,7 +1664,7 @@ FAQ
                     </h3>
 
                     <span
-                        class="text-[#e5fe53] text-4xl transition group-open:rotate-45">
+                        class="text-[#83d401] text-4xl transition group-open:rotate-45">
 
                         +
 
@@ -1601,7 +1696,7 @@ FAQ
                     </h3>
 
                     <span
-                        class="text-[#e5fe53] text-4xl transition group-open:rotate-45">
+                        class="text-[#83d401] text-4xl transition group-open:rotate-45">
 
                         +
 
@@ -1661,7 +1756,7 @@ FULL WIDTH CTA
 
             <span
                 class="uppercase tracking-[8px]
-                text-[#e5fe53]
+                text-[#83d401]
                 text-sm">
 
                 LET'S START YOUR PROJECT
@@ -1706,7 +1801,7 @@ FULL WIDTH CTA
 
                     class="px-10 py-5
                     rounded-full
-                    bg-[#e5fe53]
+                    bg-[#83d401]
                     text-[#34383b]
                     font-semibold
                     hover:scale-105
@@ -1721,9 +1816,9 @@ FULL WIDTH CTA
                     class="px-10 py-5
                     rounded-full
                     border
-                    border-[#e5fe53]
-                    text-[#e5fe53]
-                    hover:bg-[#e5fe53]
+                    border-[#83d401]
+                    text-[#83d401]
+                    hover:bg-[#83d401]
                     hover:text-[#34383b]
                     duration-300">
 
@@ -1757,7 +1852,7 @@ FOOTER
 
                     DOA IBU
 
-                    <span class="text-[#e5fe53]">
+                    <span class="text-[#83d401]">
 
                         PRODUCTION
 
@@ -1788,31 +1883,31 @@ FOOTER
                 <ul class="space-y-4 text-gray-400">
 
                     <li>
-                        <a href="#" class="hover:text-[#e5fe53]">
+                        <a href="#" class="hover:text-[#83d401]">
                             Beranda
                         </a>
                     </li>
 
                     <li>
-                        <a href="#about" class="hover:text-[#e5fe53]">
+                        <a href="#about" class="hover:text-[#83d401]">
                             Tentang
                         </a>
                     </li>
 
                     <li>
-                        <a href="#services" class="hover:text-[#e5fe53]">
+                        <a href="#services" class="hover:text-[#83d401]">
                             Layanan
                         </a>
                     </li>
 
                     <li>
-                        <a href="/gallery" class="hover:text-[#e5fe53]">
+                        <a href="/gallery" class="hover:text-[#83d401]">
                             Gallery
                         </a>
                     </li>
 
                     <li>
-                        <a href="#faq" class="hover:text-[#e5fe53]">
+                        <a href="#faq" class="hover:text-[#83d401]">
                             FAQ
                         </a>
                     </li>
@@ -1863,7 +1958,7 @@ FOOTER
 
                     <a href="#"
 
-                    class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#e5fe53] hover:text-[#34383b] duration-300">
+                    class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#83d401] hover:text-[#34383b] duration-300">
 
                         IG
 
@@ -1871,7 +1966,7 @@ FOOTER
 
                     <a href="#"
 
-                    class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#e5fe53] hover:text-[#34383b] duration-300">
+                    class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#83d401] hover:text-[#34383b] duration-300">
 
                         FB
 
@@ -1879,7 +1974,7 @@ FOOTER
 
                     <a href="#"
 
-                    class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#e5fe53] hover:text-[#34383b] duration-300">
+                    class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#83d401] hover:text-[#34383b] duration-300">
 
                         TT
 
