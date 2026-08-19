@@ -11,6 +11,32 @@ use Illuminate\Support\Facades\Storage;
 
 class GalleryController extends Controller
 {
+    // ==========================================
+    // METHOD PUBLIK / FRONT-END
+    // ==========================================
+
+    /**
+     * Halaman Publik Galeri (/galeri)
+     */
+    public function publicIndex(Request $request)
+    {
+        $query = Gallery::with(['service', 'project'])
+            ->where('status', true);
+
+        // Filter kategori jenis (foto / video) jika dipilih
+        if ($request->filled('filter')) {
+            $query->where('jenis', $request->filter);
+        }
+
+        $galleries = $query->orderBy('urutan')->get();
+
+        return view('galeri', compact('galleries'));
+    }
+
+    // ==========================================
+    // METHOD ADMIN / BACK-END
+    // ==========================================
+
     public function index()
     {
         $galleries = Gallery::with(['service', 'project'])->orderBy('urutan')->get();
@@ -38,7 +64,9 @@ class GalleryController extends Controller
         $data = $this->validated($request);
 
         if ($request->hasFile('file')) {
-            if ($gallery->file) Storage::disk('public')->delete($gallery->file);
+            if ($gallery->file) {
+                Storage::disk('public')->delete($gallery->file);
+            }
             $data['file'] = $request->file('file')->store('galleries', 'public');
         }
 
@@ -49,7 +77,9 @@ class GalleryController extends Controller
 
     public function destroy(Gallery $gallery)
     {
-        if ($gallery->file) Storage::disk('public')->delete($gallery->file);
+        if ($gallery->file) {
+            Storage::disk('public')->delete($gallery->file);
+        }
         $gallery->delete();
 
         return redirect()->route('admin.galleries.index')->with('success', 'Item galeri berhasil dihapus.');

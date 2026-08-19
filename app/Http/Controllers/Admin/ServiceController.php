@@ -10,6 +10,50 @@ use Illuminate\Support\Str;
 
 class ServiceController extends Controller
 {
+    // ==========================================
+    // METHOD PUBLIK / FRONT-END
+    // ==========================================
+
+    /**
+     * Halaman Landing Page Utama (/)
+     */
+    public function landing()
+    {
+        $services = Service::where('status', true)
+            ->orderBy('urutan')
+            ->get();
+
+        return view('index', compact('services'));
+    }
+
+    /**
+     * Halaman Katalog Semua Layanan (/services)
+     */
+    public function publicIndex()
+    {
+        $services = Service::where('status', true)
+            ->orderBy('urutan')
+            ->get();
+
+        return view('layanan', compact('services'));
+    }
+
+    /**
+     * Halaman Detail Layanan (/services/{slug})
+     */
+    public function show(Service $service)
+    {
+        if (!$service->status) {
+            abort(404);
+        }
+
+        return view('services.show', compact('service'));
+    }
+
+    // ==========================================
+    // METHOD ADMIN / BACK-END
+    // ==========================================
+
     public function index()
     {
         $services = Service::orderBy('urutan')->get();
@@ -31,7 +75,7 @@ class ServiceController extends Controller
 
         Service::create($data);
 
-        return redirect()->route('admin.services.index')->with('success', 'Layanan ditambahkan.');
+        return redirect()->route('admin.services.index')->with('success', 'Layanan berhasil ditambahkan.');
     }
 
     public function edit(Service $service)
@@ -44,21 +88,25 @@ class ServiceController extends Controller
         $data = $this->validated($request);
 
         if ($request->hasFile('gambar')) {
-            if ($service->gambar) Storage::disk('public')->delete($service->gambar);
+            if ($service->gambar) {
+                Storage::disk('public')->delete($service->gambar);
+            }
             $data['gambar'] = $request->file('gambar')->store('services', 'public');
         }
 
         $service->update($data);
 
-        return redirect()->route('admin.services.index')->with('success', 'Layanan diperbarui.');
+        return redirect()->route('admin.services.index')->with('success', 'Layanan berhasil diperbarui.');
     }
 
     public function destroy(Service $service)
     {
-        if ($service->gambar) Storage::disk('public')->delete($service->gambar);
+        if ($service->gambar) {
+            Storage::disk('public')->delete($service->gambar);
+        }
         $service->delete();
 
-        return redirect()->route('admin.services.index')->with('success', 'Layanan dihapus.');
+        return redirect()->route('admin.services.index')->with('success', 'Layanan berhasil dihapus.');
     }
 
     private function validated(Request $request): array

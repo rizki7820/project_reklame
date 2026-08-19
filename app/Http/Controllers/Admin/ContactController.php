@@ -8,6 +8,31 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
+    // ==========================================
+    // METHOD PUBLIK / FRONT-END
+    // ==========================================
+
+    /**
+     * Halaman Publik Kontak (/kontak)
+     */
+    public function publicIndex()
+    {
+        $contact = Contact::where('status', true)->first() ?? new Contact([
+            'nama'            => 'Doa Ibu Production',
+            'telepon'         => '0858-2866-6615',
+            'email'           => 'info@doaibuproduction.com',
+            'alamat'          => 'Banjarmasin, Kalimantan Selatan',
+            'jam_operasional' => 'Senin - Sabtu: 08.00 - 17.00 WITA',
+            'whatsapp_url'    => 'https://wa.me/6285828666615',
+        ]);
+
+        return view('kontak', compact('contact'));
+    }
+
+    // ==========================================
+    // METHOD ADMIN / BACK-END
+    // ==========================================
+
     public function index()
     {
         $contact = Contact::first();
