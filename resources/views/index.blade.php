@@ -111,102 +111,121 @@
         class="h-16 w-auto lg:h-20 object-contain flex-shrink-0">
 
     <!-- Text -->
-    <div class="relative">
-     <span class="font-['Anton'] leading-tight">
-        <div class="relative inline-block">
-    <!-- Lime paling luar -->
-    <span
-        class="font-['Anton'] text-4xl font-black text-white"
-        style="
-            -webkit-text-stroke: 8px #83d401;
-            paint-order: stroke fill;
-        "
-    >
-        doa ibu
-    </span>
+    <div class="relative w-fit">
 
-    <!-- Hitam di atas lime -->
-    <span
-        class="absolute inset-0 font-['Anton'] text-4xl font-black text-white"
-        style="
-            -webkit-text-stroke: 4px #000;
-            paint-order: stroke fill;
-        "
-    >
-        doa ibu
-    </span>
-</div>
-            <div class="relative inline-block">
-    <!-- Lime paling luar -->
-    <span
-        class="font-['Anton'] text-4xl font-black text-white"
-        style="
-            -webkit-text-stroke: 8px #83d401;
-            paint-order: stroke fill;
-        "
-    >
-        production
-    </span>
+    <!-- ================= DOA IBU ================= -->
+    <div class="relative inline-block z-10">
+        <!-- LIME -->
+        <span
+            class="font-['Anton'] text-sm lg:text-xl  text-white "
+            style="
+                -webkit-text-stroke: 8px #83d401;
+                paint-order: stroke fill;
+            "
+        >
+            doa ibu
+        </span>
 
-    <!-- Hitam di atas lime -->
-    <span
-        class="absolute inset-0 font-['Anton'] text-4xl font-black text-white"
-        style="
-            -webkit-text-stroke: 4px #000;
-            paint-order: stroke fill;
-        "
-    >
-        production
-    </span>
-</div>
+        <!-- BLACK -->
+        <span
+            class="absolute inset-0 font-['Anton'] text-sm lg:text-xl  text-white mt-2 lg:mt-0"
+            style="
+                -webkit-text-stroke: 4px #000;
+                paint-order: stroke fill;
+            "
+        >
+            doa ibu
+        </span>
+    </div>
 
-       <div class="relative inline-block">
-    <!-- Lime paling luar -->
-    <span
-        class="font-['Kaushan_Script'] text-2xl font-black text-white"
-        style="
-            -webkit-text-stroke: 8px #83d401;
-            paint-order: stroke fill;
-        "
-    >
-        Advertising
-    </span>
 
-    <!-- Hitam di atas lime -->
-    <span
-        class="absolute inset-0 font-['Kaushan_Script'] text-2xl font-black text-white"
-        style="
-            -webkit-text-stroke: 4px #000;
-            paint-order: stroke fill;
-        "
-    >
-        Advertising
-    </span>
-</div>
+    <!-- ================= PRODUCTION ================= -->
+    <div class="relative block z-10 -mt-3">
+        <!-- LIME -->
+        <span
+            class="font-['Anton'] text-sm lg:text-xl text-white"
+            style="
+                -webkit-text-stroke: 8px #83d401;
+                paint-order: stroke fill;
+            "
+        >
+            production
+        </span>
 
-<div class="relative inline-block">
-    <!-- Lime paling luar -->
-    <span
-        class="font-['Kaushan_Script'] text-2xl font-black text-white"
-        style="
-            -webkit-text-stroke: 8px #83d401;
-            paint-order: stroke fill;
-        "
-    >
-        Banjarmasin
-    </span>
+        <!-- BLACK -->
+        <span
+            class="absolute inset-0 font-['Anton'] text-sm lg:text-xl mt-2 text-white"
+            style="
+                -webkit-text-stroke: 4px #000;
+                paint-order: stroke fill;
+            "
+        >
+            production
+        </span>
+    </div>
 
-    <!-- Hitam di atas lime -->
-    <span
-        class="absolute inset-0 font-['Kaushan_Script'] text-2xl font-black text-white"
-        style="
-            -webkit-text-stroke: 4px #000;
-            paint-order: stroke fill;
-        "
+
+    <!-- ================= ADVERTISING ================= -->
+    <div
+        class="absolute z-20
+               left-[38%] top-[70%] lg:top-[80%]
+               -rotate-[8deg]
+               whitespace-nowrap"
     >
-        Banjarmasin
-    </span>
-</div>
+        <!-- LIME -->
+        <span
+            class="font-['Kaushan_Script'] text-sm lg:text-xl text-white"
+            style="
+                -webkit-text-stroke: 8px #83d401;
+                paint-order: stroke fill;
+            "
+        >
+            Advertising
+        </span>
+
+        <!-- BLACK -->
+        <span
+            class="absolute inset-0 font-['Kaushan_Script'] text-sm lg:text-xl mt-2 text-white"
+            style="
+                -webkit-text-stroke: 4px #000;
+                paint-order: stroke fill;
+            "
+        >
+            Advertising
+        </span>
+    </div>
+
+
+    <!-- ================= BANJARMASIN ================= -->
+    <div
+        class="absolute z-20
+               left-[47%] top-[90%] lg:top-[120%]
+               -rotate-[8deg]
+               whitespace-nowrap"
+    >
+        <!-- LIME -->
+        <span
+            class="font-['Kaushan_Script'] text-sm lg:text-xl text-white"
+            style="
+                -webkit-text-stroke: 8px #83d401;
+                paint-order: stroke fill;
+            "
+        >
+            Banjarmasin
+        </span>
+
+        <!-- BLACK -->
+        <span
+            class="absolute inset-0 font-['Kaushan_Script'] text-sm lg:text-xl mt-2 text-white"
+            style="
+                -webkit-text-stroke: 4px #000;
+                paint-order: stroke fill;
+            "
+        >
+            Banjarmasin
+        </span>
+    </div>
+
 </div>
 
 </a>
@@ -262,7 +281,7 @@ HERO
 
     <div class="pb-10">
 
-        <h1 class="text-[68px] leading-[60px] font-bold italic uppercase outline-text block mt-2">
+        <h1 class="text-[68px] leading-[60px] font-bold italic uppercase outline-text block mt-6">
             NEONBOX
         </h1>
 
@@ -672,10 +691,9 @@ ABOUT
         <div class="marquee whitespace-nowrap">
 
             <span>
-                BRANDING • ADVERTISING • PHOTOGRAPHY • VIDEOGRAPHY •
-                DIGITAL MARKETING • CONTENT CREATOR • EVENT PRODUCTION •
-                BRANDING • ADVERTISING • PHOTOGRAPHY • VIDEOGRAPHY •
-                DIGITAL MARKETING • CONTENT CREATOR • EVENT PRODUCTION •
+                BRANDING • ADVERTISING • MARKETING • NEON PRODUCTION •
+                BRANDING • ADVERTISING • MARKETING • NEON PRODUCTION •
+                BRANDING • ADVERTISING • MARKETING • NEON PRODUCTION •
             </span>
 
         </div>
@@ -698,7 +716,7 @@ SERVICES
                     Layanan Kami
                 </span>
 
-                <h2 class="text-5xl lg:text-7xl font-black mt-4 leading-tight">
+                <h2 class="text-xl lg:text-2xl font-black mt-4 leading-tight">
                     Creative
                     <span class="outline-text block">
                         Services
@@ -786,7 +804,7 @@ SERVICES
                     </span>
 
                     <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">
-                        Photography & Videography
+                        Neon Box & Pylon Sign
                     </h3>
 
                     <p class="mt-5 text-gray-400 leading-8">
@@ -1027,7 +1045,7 @@ WHY CHOOSE US
 
                 </span>
 
-                <h2 class="text-5xl lg:text-7xl font-black mt-5 leading-tight">
+                <h2 class="text-xl lg:text-2xl font-black mt-5 leading-tight">
 
                     Partner Kreatif
 
@@ -1123,10 +1141,11 @@ WHY CHOOSE US
 
                             <p class="mt-3 text-gray-400">
 
-                                Photographer, Videographer,
-                                Graphic Designer,
-                                Content Creator,
-                                hingga Web Developer.
+                                Pylon Sign,
+                                Neon Sign,
+                                Huruf Timbul,
+                                Papan Nama,
+                                Logo LED
 
                             </p>
 
@@ -1276,7 +1295,7 @@ PORTFOLIO
 
                 </span>
 
-                <h2 class="text-5xl lg:text-7xl font-black mt-5 leading-tight">
+                <h2 class="text-xl lg:text-2xl font-black mt-5 leading-tight">
 
                     Karya Terbaru
 
@@ -1295,7 +1314,7 @@ PORTFOLIO
                 <p class="text-gray-400 max-w-lg leading-8 mb-8">
 
                     Jelajahi berbagai hasil karya terbaru kami dari berbagai kategori
-                    mulai dari advertising, photography, videography,
+                    mulai dari advertising,
                     event hingga digital media.
 
                 </p>
@@ -1381,7 +1400,7 @@ TESTIMONI
 
         </span>
 
-        <h2 class="text-5xl lg:text-7xl font-black mt-5">
+        <h2 class="text-xl lg:text-2xl font-black mt-5">
 
             Apa Kata
 
@@ -1526,7 +1545,7 @@ FAQ
 
             </span>
 
-            <h2 class="text-5xl lg:text-7xl font-black mt-5">
+            <h2 class="text-xl lg:text-2xl font-black mt-5">
 
                 Pertanyaan
 
@@ -1788,8 +1807,7 @@ FULL WIDTH CTA
                 mx-auto">
 
                 Dari branding, advertising,
-                photography, videography,
-                social media management hingga website development,
+                media management hingga Project development,
                 kami siap membantu bisnis Anda tampil lebih profesional.
 
             </p>
@@ -1863,9 +1881,7 @@ FOOTER
                 <p class="mt-8 text-gray-400 leading-8">
 
                     Creative Production House yang berfokus pada
-                    branding, advertising, photography,
-                    videography dan digital media.
-
+                    branding, advertising.
                 </p>
 
             </div>
@@ -1929,7 +1945,7 @@ FOOTER
                 <div class="space-y-5 text-gray-400">
 
                     <p>
-                        📞 +62 812 xxxx xxxx
+                        📞 +62 858 2866 6615
                     </p>
 
                     <p>
@@ -1937,7 +1953,7 @@ FOOTER
                     </p>
 
                     <p>
-                        📍 Bandar Lampung
+                        📍 Banjarmasin
                     </p>
 
                 </div>
