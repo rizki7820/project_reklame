@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <style>
@@ -52,7 +51,7 @@
 </head>
 <body class="text-white overflow-x-hidden">
 
-   <!-- ================= NAVBAR ================= -->
+    <!-- ================= NAVBAR ================= -->
     @include('components.navbar')
 
     <!-- Header Section -->
@@ -92,11 +91,24 @@
             @else
                 <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
                     @foreach($articles as $index => $article)
+                        @php
+                            // Logika pengecekan gambar: Mendukung link eksternal (http/https), storage lokal, atau fallback random
+                            if (!empty($article->gambar)) {
+                                if (str_starts_with($article->gambar, 'http://') || str_starts_with($article->gambar, 'https://')) {
+                                    $articleImg = $article->gambar;
+                                } else {
+                                    $articleImg = asset('storage/' . $article->gambar);
+                                }
+                            } else {
+                                $articleImg = 'https://picsum.photos/600/400?random=' . ($index + 10);
+                            }
+                        @endphp
+                        
                         <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500 flex flex-col justify-between">
                             <div>
                                 <div class="relative overflow-hidden h-64">
                                     <img 
-                                        src="{{ $article->gambar ? asset('storage/' . $article->gambar) : 'https://picsum.photos/600/400?random=' . ($index + 10) }}" 
+                                        src="{{ $articleImg }}" 
                                         alt="{{ $article->judul }}" 
                                         class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
                                     >
@@ -144,178 +156,90 @@
         </div>
     </section>
 
-    
-<!-- ===================================
-FOOTER
-=================================== -->
+    <!-- ===================================
+    FOOTER
+    =================================== -->
+    <footer class="bg-[#34383b] border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-20">
+            <div class="grid lg:grid-cols-4 gap-16">
+                <!-- Brand -->
+                <div>
+                    <h2 class="text-3xl font-black">
+                        DOA IBU
+                        <span class="text-[#83d401]">
+                            PRODUCTION
+                        </span>
+                    </h2>
+                    <p class="mt-8 text-gray-400 leading-8">
+                        Creative Production House yang berfokus pada branding, advertising.
+                    </p>
+                </div>
 
-<footer class="bg-[#34383b] border-t border-white/10">
+                <!-- Navigation -->
+                <div>
+                    <h3 class="font-bold text-xl mb-8">
+                        Navigasi
+                    </h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li>
+                            <a href="#" class="hover:text-[#83d401]">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="hover:text-[#83d401]">Tentang</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="hover:text-[#83d401]">Layanan</a>
+                        </li>
+                        <li>
+                            <a href="/gallery" class="hover:text-[#83d401]">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#faq" class="hover:text-[#83d401]">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
 
-    <div class="max-w-7xl mx-auto px-6 py-20">
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-bold text-xl mb-8">
+                        Hubungi Kami
+                    </h3>
+                    <div class="space-y-5 text-gray-400">
+                        <p>📞 +62 858 2866 6615</p>
+                        <p>✉ info@doaibuproduction.com</p>
+                        <p>📍 Banjarmasin</p>
+                    </div>
+                </div>
 
-        <div class="grid lg:grid-cols-4 gap-16">
+                <!-- Social -->
+                <div>
+                    <h3 class="font-bold text-xl mb-8">
+                        Ikuti Kami
+                    </h3>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#83d401] hover:text-[#34383b] duration-300">
+                            IG
+                        </a>
+                        <a href="#" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#83d401] hover:text-[#34383b] duration-300">
+                            FB
+                        </a>
+                        <a href="#" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#83d401] hover:text-[#34383b] duration-300">
+                            TT
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-            <!-- Brand -->
-
-            <div>
-
-                <h2 class="text-3xl font-black">
-
-                    DOA IBU
-
-                    <span class="text-[#83d401]">
-
-                        PRODUCTION
-
-                    </span>
-
-                </h2>
-
-                <p class="mt-8 text-gray-400 leading-8">
-
-                    Creative Production House yang berfokus pada
-                    branding, advertising.
+            <div class="border-t border-white/10 mt-20 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-gray-500">
+                    © 2026 Doa Ibu Production. All Rights Reserved.
                 </p>
-
+                <p class="text-gray-500">
+                    Designed with ❤️ by Doa Ibu Production
+                </p>
             </div>
-
-            <!-- Navigation -->
-
-            <div>
-
-                <h3 class="font-bold text-xl mb-8">
-
-                    Navigasi
-
-                </h3>
-
-                <ul class="space-y-4 text-gray-400">
-
-                    <li>
-                        <a href="#" class="hover:text-[#83d401]">
-                            Beranda
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#about" class="hover:text-[#83d401]">
-                            Tentang
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#services" class="hover:text-[#83d401]">
-                            Layanan
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/gallery" class="hover:text-[#83d401]">
-                            Gallery
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#faq" class="hover:text-[#83d401]">
-                            FAQ
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <!-- Contact -->
-
-            <div>
-
-                <h3 class="font-bold text-xl mb-8">
-
-                    Hubungi Kami
-
-                </h3>
-
-                <div class="space-y-5 text-gray-400">
-
-                    <p>
-                        📞 +62 858 2866 6615
-                    </p>
-
-                    <p>
-                        ✉ info@doaibuproduction.com
-                    </p>
-
-                    <p>
-                        📍 Banjarmasin
-                    </p>
-
-                </div>
-
-            </div>
-
-            <!-- Social -->
-
-            <div>
-
-                <h3 class="font-bold text-xl mb-8">
-
-                    Ikuti Kami
-
-                </h3>
-
-                <div class="flex gap-4">
-
-                    <a href="#"
-
-                    class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#83d401] hover:text-[#34383b] duration-300">
-
-                        IG
-
-                    </a>
-
-                    <a href="#"
-
-                    class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#83d401] hover:text-[#34383b] duration-300">
-
-                        FB
-
-                    </a>
-
-                    <a href="#"
-
-                    class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#83d401] hover:text-[#34383b] duration-300">
-
-                        TT
-
-                    </a>
-
-                </div>
-
-            </div>
-
         </div>
-
-        <div
-            class="border-t border-white/10 mt-20 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
-
-            <p class="text-gray-500">
-
-                © 2026 Doa Ibu Production.
-                All Rights Reserved.
-
-            </p>
-
-            <p class="text-gray-500">
-
-                Designed with ❤️ by Doa Ibu Production
-
-            </p>
-
-        </div>
-
-    </div>
-
-</footer>
+    </footer>
 
 </body>
 </html>

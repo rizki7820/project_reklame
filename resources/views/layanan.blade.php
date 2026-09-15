@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
     <style>
@@ -40,11 +39,50 @@
             @if ($services->count() > 0)
                 <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
                     @foreach ($services as $index => $service)
+                        @php
+                            // Menentukan gambar dari database (mendukung link URL atau file lokal)
+                            if (!empty($service->gambar)) {
+                                // Cek apakah isi database berupa link lengkap (http:// atau https://)
+                                if (str_starts_with($service->gambar, 'http://') || str_starts_with($service->gambar, 'https://')) {
+                                    $imageUrl = $service->gambar;
+                                } else {
+                                    // Jika berupa path file dari folder storage Laravel
+                                    $imageUrl = asset('storage/' . $service->gambar);
+                                }
+                            } else {
+                                // Fallback gambar relevan jika kolom database kosong
+                                $nama = strtolower(trim($service->nama_layanan));
+                                
+                                if (str_contains($nama, 'huruf timbul') && !str_contains($nama, '3d')) {
+                                    $imageUrl = 'https://images.unsplash.com/photo-1542744094-3a31243264d0?auto=format&fit=crop&w=800&q=80';
+                                } elseif (str_contains($nama, 'neon box') && !str_contains($nama, 'slim')) {
+                                    $imageUrl = 'https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=800&q=80';
+                                } elseif (str_contains($nama, 'slim light box') || (str_contains($nama, 'neon box') && str_contains($nama, 'slim'))) {
+                                    $imageUrl = 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80';
+                                } elseif (str_contains($nama, 'billboard')) {
+                                    $imageUrl = 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=800&q=80';
+                                } elseif (str_contains($nama, '3d') || str_contains($nama, 'lettering')) {
+                                    $imageUrl = 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80';
+                                } elseif (str_contains($nama, 'papan nama')) {
+                                    $imageUrl = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80';
+                                } elseif (str_contains($nama, 'pylon') || str_contains($nama, 'spbu')) {
+                                    $imageUrl = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80';
+                                } elseif (str_contains($nama, 'acp') || str_contains($nama, 'composite')) {
+                                    $imageUrl = 'https://images.unsplash.com/photo-1541888946425-d0fbb18f86f6?auto=format&fit=crop&w=800&q=80';
+                                } elseif (str_contains($nama, 'running text') || str_contains($nama, 'videotron')) {
+                                    $imageUrl = 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80';
+                                } elseif (str_contains($nama, 'branding interior') && !str_contains($nama, 'car')) {
+                                    $imageUrl = 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80';
+                                } else {
+                                    $imageUrl = 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80';
+                                }
+                            }
+                        @endphp
                         <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-300 flex flex-col justify-between">
                             <div>
                                 <div class="relative overflow-hidden h-64 bg-black/30">
                                     <img 
-                                        src="{{ $service->gambar ? asset('storage/' . $service->gambar) : 'https://picsum.photos/600/400?random=' . $index }}" 
+                                        src="{{ $imageUrl }}" 
                                         alt="{{ $service->nama_layanan }}"
                                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                                     >
@@ -201,27 +239,18 @@ FOOTER
                 <div class="flex gap-4">
 
                     <a href="#"
-
                     class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#83d401] hover:text-[#34383b] duration-300">
-
                         IG
-
                     </a>
 
                     <a href="#"
-
                     class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#83d401] hover:text-[#34383b] duration-300">
-
                         FB
-
                     </a>
 
                     <a href="#"
-
                     class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#83d401] hover:text-[#34383b] duration-300">
-
                         TT
-
                     </a>
 
                 </div>
@@ -234,16 +263,12 @@ FOOTER
             class="border-t border-white/10 mt-20 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
 
             <p class="text-gray-500">
-
                 © 2026 Doa Ibu Production.
                 All Rights Reserved.
-
             </p>
 
             <p class="text-gray-500">
-
                 Designed with ❤️ by Doa Ibu Production
-
             </p>
 
         </div>

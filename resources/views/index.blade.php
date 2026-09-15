@@ -261,112 +261,125 @@
                 </p>
             </div>
 
-            <!-- Grid Services -->
-            <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
-                    <div class="relative overflow-hidden h-72">
-                        <img src="https://picsum.photos/3010/1080" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Branding">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#34383b] via-black/20 to-transparent"></div>
-                    </div>
-                    <div class="p-8">
-                        <span class="text-[#83d401] tracking-[4px] uppercase text-xs">01</span>
-                        <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">Branding Identity</h3>
-                        <p class="mt-5 text-gray-400 leading-8">Logo, visual identity, brand guideline, company profile, hingga kebutuhan branding perusahaan.</p>
-                        <div class="mt-8 flex justify-between items-center">
-                            <span class="text-sm uppercase tracking-widest text-gray-500">Explore</span>
-                            <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition-all duration-300">→</div>
-                        </div>
-                    </div>
-                </div>
+            
+<!-- Grid Services -->
+<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
 
-                <!-- Service 2 -->
-                <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
-                    <div class="relative overflow-hidden h-72">
-                        <img src="https://picsum.photos/3010/1080" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Neon Sign">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#34383b] via-black/20 to-transparent"></div>
-                    </div>
-                    <div class="p-8">
-                        <span class="text-[#83d401] tracking-[4px] uppercase text-xs">02</span>
-                        <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">Neon Box & Pylon Sign</h3>
-                        <p class="mt-5 text-gray-400 leading-8">Dokumentasi event, foto produk, company profile, cinematic video hingga aerial drone.</p>
-                        <div class="mt-8 flex justify-between items-center">
-                            <span class="text-sm uppercase tracking-widest text-gray-500">Explore</span>
-                            <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition-all">→</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
-                    <div class="relative overflow-hidden h-72">
-                        <img src="https://picsum.photos/3010/1080" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Social Media">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#34383b] via-black/20 to-transparent"></div>
-                    </div>
-                    <div class="p-8">
-                        <span class="text-[#83d401] tracking-[4px] uppercase text-xs">03</span>
-                        <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">Social Media Management</h3>
-                        <p class="mt-5 text-gray-400 leading-8">Content planning, desain feed, copywriting, scheduling dan monthly report.</p>
-                        <div class="mt-8 flex justify-between items-center">
-                            <span class="text-sm uppercase tracking-widest text-gray-500">Explore</span>
-                            <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition">→</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
-                    <div class="relative overflow-hidden h-72">
-                        <img src="https://picsum.photos/3010/1080" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Advertising">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#34383b] via-black/20 to-transparent"></div>
-                    </div>
-                    <div class="p-8">
-                        <span class="text-[#83d401] tracking-[4px] uppercase text-xs">04</span>
-                        <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">Digital Advertising</h3>
-                        <p class="mt-5 text-gray-400 leading-8">Google Ads, Meta Ads, TikTok Ads, campaign strategy dan optimasi iklan.</p>
-                        <div class="mt-8 flex justify-between items-center">
-                            <span class="text-sm uppercase tracking-widest text-gray-500">Explore</span>
-                            <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition">→</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 5 -->
-                <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
-                    <div class="relative overflow-hidden h-72">
-                        <img src="https://picsum.photos/3010/1080" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Event">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#34383b] via-black/20 to-transparent"></div>
-                    </div>
-                    <div class="p-8">
-                        <span class="text-[#83d401] tracking-[4px] uppercase text-xs">05</span>
-                        <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">Event Production</h3>
-                        <p class="mt-5 text-gray-400 leading-8">Event organizer, multimedia, live streaming, panggung dan dokumentasi.</p>
-                        <div class="mt-8 flex justify-between items-center">
-                            <span class="text-sm uppercase tracking-widest text-gray-500">Explore</span>
-                            <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition">→</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 6 -->
-                <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
-                    <div class="relative overflow-hidden h-72">
-                        <img src="https://picsum.photos/3010/1080" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Website">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#34383b] via-black/20 to-transparent"></div>
-                    </div>
-                    <div class="p-8">
-                        <span class="text-[#83d401] tracking-[4px] uppercase text-xs">06</span>
-                        <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">Website Development</h3>
-                        <p class="mt-5 text-gray-400 leading-8">Landing page, company profile, e-commerce dan custom web application.</p>
-                        <div class="mt-8 flex justify-between items-center">
-                            <span class="text-sm uppercase tracking-widest text-gray-500">Explore</span>
-                            <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition">→</div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Service 1: Branding Identity -->
+    <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
+        <div class="relative overflow-hidden h-72">
+            <img src="https://i.pinimg.com/736x/e7/6f/c8/e76fc85382181253ffaf1547ee9d8748.jpg"
+                 class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                 alt="Branding Identity dan desain logo">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#34383b] via-black/20 to-transparent"></div>
+        </div>
+        <div class="p-8">
+            <span class="text-[#83d401] tracking-[4px] uppercase text-xs">01</span>
+            <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">Branding Identity</h3>
+            <p class="mt-5 text-gray-400 leading-8">Logo, visual identity, brand guideline, company profile, hingga kebutuhan branding perusahaan.</p>
+            <div class="mt-8 flex justify-between items-center">
+                <span class="text-sm uppercase tracking-widest text-gray-500">Explore</span>
+                <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition-all duration-300">→</div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <!-- Service 2: Neon Box & Pylon Sign -->
+    <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
+        <div class="relative overflow-hidden h-72">
+            <img src="https://i.pinimg.com/736x/2b/e4/a0/2be4a03cfc18c3179637c1d0f4effe5a.jpg"
+                 class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                 alt="Neon sign dan papan nama bercahaya">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#34383b] via-black/20 to-transparent"></div>
+        </div>
+        <div class="p-8">
+            <span class="text-[#83d401] tracking-[4px] uppercase text-xs">02</span>
+            <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">Neon Box & Pylon Sign</h3>
+            <p class="mt-5 text-gray-400 leading-8">Produksi neon box, pylon sign, papan nama, signage toko, dan kebutuhan identitas visual outdoor.</p>
+            <div class="mt-8 flex justify-between items-center">
+                <span class="text-sm uppercase tracking-widest text-gray-500">Explore</span>
+                <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition-all">→</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service 3: Social Media Management -->
+    <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
+        <div class="relative overflow-hidden h-72">
+            <img src="https://i.pinimg.com/1200x/4e/65/dc/4e65dcb34ce9ed7167232ac2e5b28c0a.jpg"
+                 class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                 alt="Social media management dan pembuatan konten">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#34383b] via-black/20 to-transparent"></div>
+        </div>
+        <div class="p-8">
+            <span class="text-[#83d401] tracking-[4px] uppercase text-xs">03</span>
+            <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">Social Media Management</h3>
+            <p class="mt-5 text-gray-400 leading-8">Content planning, desain feed, copywriting, scheduling dan monthly report.</p>
+            <div class="mt-8 flex justify-between items-center">
+                <span class="text-sm uppercase tracking-widest text-gray-500">Explore</span>
+                <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition">→</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service 4: Digital Advertising -->
+    <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
+        <div class="relative overflow-hidden h-72">
+            <img src="https://i.pinimg.com/736x/69/e9/26/69e926a114363cf6665cff72713a12bd.jpg"
+                 class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                 alt="Digital advertising dan analisis kampanye pemasaran">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#34383b] via-black/20 to-transparent"></div>
+        </div>
+        <div class="p-8">
+            <span class="text-[#83d401] tracking-[4px] uppercase text-xs">04</span>
+            <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">Digital Advertising</h3>
+            <p class="mt-5 text-gray-400 leading-8">Google Ads, Meta Ads, TikTok Ads, campaign strategy dan optimasi iklan.</p>
+            <div class="mt-8 flex justify-between items-center">
+                <span class="text-sm uppercase tracking-widest text-gray-500">Explore</span>
+                <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition">→</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service 5: Event Production -->
+    <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
+        <div class="relative overflow-hidden h-72">
+            <img src="https://i.pinimg.com/736x/14/88/e2/1488e258b0675cf9923315218b00c4ff.jpg"
+                 class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                 alt="Event production dan penyelenggaraan acara">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#34383b] via-black/20 to-transparent"></div>
+        </div>
+        <div class="p-8">
+            <span class="text-[#83d401] tracking-[4px] uppercase text-xs">05</span>
+            <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">Event Production</h3>
+            <p class="mt-5 text-gray-400 leading-8">Event organizer, multimedia, live streaming, panggung dan dokumentasi.</p>
+            <div class="mt-8 flex justify-between items-center">
+                <span class="text-sm uppercase tracking-widest text-gray-500">Explore</span>
+                <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition">→</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service 6: Website Development -->
+    <div class="group overflow-hidden rounded-3xl border border-white/10 bg-[#3b3f42] hover:border-[#83d401] transition-all duration-500">
+        <div class="relative overflow-hidden h-72">
+            <img src="https://i.pinimg.com/1200x/03/79/e5/0379e54534bda2ee5836637f660f0c9b.jpg"
+                 class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                 alt="Website development dan pemrograman">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#34383b] via-black/20 to-transparent"></div>
+        </div>
+        <div class="p-8">
+            <span class="text-[#83d401] tracking-[4px] uppercase text-xs">06</span>
+            <h3 class="text-3xl font-bold mt-3 group-hover:text-[#83d401] transition">Website Development</h3>
+            <p class="mt-5 text-gray-400 leading-8">Landing page, company profile, e-commerce dan custom web application.</p>
+            <div class="mt-8 flex justify-between items-center">
+                <span class="text-sm uppercase tracking-widest text-gray-500">Explore</span>
+                <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#83d401] group-hover:text-[#34383b] group-hover:border-[#83d401] transition">→</div>
+            </div>
+        </div>
+    </div>
+
+</div>
 
     <!-- ================= WHY CHOOSE US ================= -->
     <section class="py-32 bg-[#2f3336]">
@@ -446,7 +459,7 @@
                 <div class="relative">
                     <div class="absolute -top-8 -right-8 w-40 h-40 rounded-full bg-[#83d401]/20 blur-3xl"></div>
                     <img
-                        src="https://picsum.photos/3010/1080"
+                        src="https://i.pinimg.com/736x/15/e7/04/15e7041e748c65d0f1ede5070a620a63.jpg"
                         alt="Team"
                         class="rounded-[40px] object-cover w-full h-[760px] border border-white/10"
                     >
@@ -495,7 +508,7 @@
                         <div class="swiper-slide">
                             <div class="group">
                                 <div class="overflow-hidden rounded-3xl">
-                                    <img src="https://picsum.photos/3010/1080" alt="Gambar Acak" class="w-full h-80 object-cover group-hover:scale-110 duration-700">
+                                    <img src="https://i.pinimg.com/736x/0b/50/ae/0b50ae2c421486a3ddbe1a37d065d2fb.jpg" alt="Gambar Acak" class="w-full h-80 object-cover group-hover:scale-110 duration-700">
                                 </div>
                                 <div class="mt-5">
                                     <p class="text-[#83d401] uppercase text-xs tracking-[5px]">Advertising</p>
